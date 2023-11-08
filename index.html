@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional Custom Styles */
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen bg-gray-200">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="bg-blue-800 w-64 px-6 py-8">
+            <!-- Logo -->
+            <div class="text-white mb-10 text-2xl font-bold">E-commerce Dashboard</div>
+
+            <!-- Sidebar Links -->
+            <ul class="space-y-4">
+                <li><a href="#" class="text-white">Dashboard</a></li>
+                <li><a href="#" class="text-white">Orders</a></li>
+                <li><a href="#" class="text-white">Products</a></li>
+                <li><a href="#" class="text-white">Customers</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
+
+        <!-- Content -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <!-- Header -->
+            <header class="bg-white py-4 shadow">
+                <!-- Toggle Sidebar Button -->
+                <div class="flex justify-between items-center">
+                    <button id="toggleSidebar" class="text-blue-800 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Other Header Elements -->
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+                <!-- Dashboard Content Goes Here -->
+                <div class="container mx-auto px-4 py-6">
+                    <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
+                    <!-- Add your content, tables, charts, etc. here -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
